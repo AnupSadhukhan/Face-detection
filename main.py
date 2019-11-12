@@ -3,11 +3,10 @@ import sys
 import urllib
 import numpy as np
 
-
-# Get user supplied values
 #Loading image from url
 req = urllib.urlopen('https://www.hellomagazine.com/imagenes/healthandbeauty/skincare-and-fragrances/2019102679678/simon-cowell-face-new-youthful-appearance/0-384-786/simon-cowell-t.jpg')
 arr = np.asarray(bytearray(req.read()), dtype=np.uint8)
+#loading training data
 cascPath = "C:\Python27\Lib\site-packages\cv2\data\haarcascade_frontalface_default.xml"
 
 # Create the haar cascade
